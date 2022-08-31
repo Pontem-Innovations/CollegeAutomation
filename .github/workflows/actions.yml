@@ -15,6 +15,8 @@ jobs:
       - name: setup python
         uses: actions/setup-python@v4
         with:
+          ssh-key: ${{ secrets.ACCESS_TOKEN }}
+          persist-credentials: true
           python-version: '3.8' # install the python version needed
           
       - name: install python packages
@@ -32,12 +34,9 @@ jobs:
       - name: commit files
         run: |
 
-        git config --global user.email "geoffrey.hawes85@gmail.com"
-                  git config --global user.name "ghawes85"
-                  git config --global credential.helper cache
-                  git clone https://${{secrets.ACCESS_TOKEN}}@github.com/Pontem-Innovations/CollegeAutomation
-          git add -A
-          git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -m "Add changes" -a
           
       - name: push changes
         uses: CollegeAutomation/github-push-action@v3.0.2
