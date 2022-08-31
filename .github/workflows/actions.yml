@@ -22,14 +22,20 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           
+       env:
+            ACCESS_TOKEN: '${{ secrets.ACCESS_TOKEN }}'
+
       - name: execute py script # run main.py
         
         run: python main.py
           
       - name: commit files
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+
+        git config --global user.email "hi@aliasifkhan.com"
+                  git config --global user.name "aliasifk"
+                  git config --global credential.helper cache
+                  git clone https://${{secrets.ACCESS_TOKEN}}@github.com/Pontem-Innovations/CollegeAutomation
           git add -A
           git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
           
