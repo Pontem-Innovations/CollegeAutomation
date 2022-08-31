@@ -32,8 +32,8 @@ jobs:
       - name: commit files
         run: |
 
-        git config --global user.email "hi@aliasifkhan.com"
-                  git config --global user.name "aliasifk"
+        git config --global user.email "geoffrey.hawes85@gmail.com"
+                  git config --global user.name "ghawes85"
                   git config --global credential.helper cache
                   git clone https://${{secrets.ACCESS_TOKEN}}@github.com/Pontem-Innovations/CollegeAutomation
           git add -A
