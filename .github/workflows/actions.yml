@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo content
-        uses: actions/checkout@v3 # checkout the repository content to github runner
+        uses: actions/checkout@v2 # checkout the repository content to github runner
       - name: setup python
         uses: actions/setup-python@v4
         with:
@@ -30,6 +30,6 @@ jobs:
           git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
           
       - name: push changes
-        uses: Pontem-Innovations/CollegeAutomation/github-push-action@main
+        uses: Pontem-Innovations/CollegeAutomation/github-push-action@v0.6.0
         with:
           branch: main 
