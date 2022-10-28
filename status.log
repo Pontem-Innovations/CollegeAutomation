@@ -209,3 +209,7 @@
 2022-10-27 08:00:50,414 - __main__ - INFO - {'College': 'CRDHA', 'MembersUpdated': [], 'MembersUpdatedCount': 0, 'RecordsUpdated': 0, 'Route': '/removal', 'Status': 'Complete'}
 2022-10-27 08:00:57,878 - __main__ - INFO - {'College': 'CDHNS', 'MembersUpdated': [], 'MembersUpdatedCount': 0, 'RecordsUpdated': 0, 'Route': '/renewal', 'Status': 'Complete'}
 2022-10-27 08:00:58,247 - __main__ - INFO - {'College': 'CDHNS', 'MembersUpdated': [], 'MembersUpdatedCount': 0, 'RecordsUpdated': 0, 'Route': '/removal', 'Status': 'Complete'}
+2022-10-28 08:00:41,821 - __main__ - INFO - {'College': 'CRDHA', 'MembersUpdated': [], 'MembersUpdatedCount': 0, 'RecordsUpdated': 0, 'Route': '/renewal', 'Status': 'Complete'}
+2022-10-28 08:00:42,175 - __main__ - INFO - {'College': 'CRDHA', 'MembersUpdated': [], 'MembersUpdatedCount': 0, 'RecordsUpdated': 0, 'Route': '/removal', 'Status': 'Complete'}
+2022-10-28 08:00:50,050 - __main__ - INFO - {'College': 'CDHNS', 'MembersUpdated': [], 'MembersUpdatedCount': 0, 'RecordsUpdated': 0, 'Route': '/renewal', 'Status': 'Complete'}
+2022-10-28 08:00:50,680 - __main__ - INFO - {'College': 'CDHNS', 'MembersUpdated': [], 'MembersUpdatedCount': 0, 'RecordsUpdated': 0, 'Route': '/removal', 'Status': 'Complete'}
