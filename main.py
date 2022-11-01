@@ -20,8 +20,8 @@ logger.addHandler(logger_file_handler)
 if __name__ == "__main__":
     
 
-    #r = requests.get('https://crdhaportal-beta.azurewebsites.net/automation/renewal/DwDpmP7ClwXz3B6b4uQb')
-    r = requests.get('https://crdhaportal.azurewebsites.net/automation/renewal/DwDpmP7ClwXz3B6b4uQb')
+    r = requests.get('https://crdhaportal-beta.azurewebsites.net/automation/renewal/DwDpmP7ClwXz3B6b4uQb')
+    #r = requests.get('https://crdhaportal.azurewebsites.net/automation/renewal/DwDpmP7ClwXz3B6b4uQb')
     #r = requests.get('http://localhost:5005/automation/renewal/DwDpmP7ClwXz3B6b4uQb')
     
     if r.status_code == 200:
@@ -30,8 +30,8 @@ if __name__ == "__main__":
         print(data)
        logger.info(data)
 
-    #r = requests.get('https://crdhaportal-beta.azurewebsites.net/automation/removal/DwDpmP7ClwXz3B6b4uQb')
-    r = requests.get('https://crdhaportal.azurewebsites.net/automation/removal/DwDpmP7ClwXz3B6b4uQb')
+    r = requests.get('https://crdhaportal-beta.azurewebsites.net/automation/removal/DwDpmP7ClwXz3B6b4uQb')
+    #r = requests.get('https://crdhaportal.azurewebsites.net/automation/removal/DwDpmP7ClwXz3B6b4uQb')
     #r = requests.get('http://localhost:5005/automation/removal/DwDpmP7ClwXz3B6b4uQb')
     
     if r.status_code == 200:
@@ -40,7 +40,7 @@ if __name__ == "__main__":
         print(data)
         logger.info(data)
 
-    r = requests.get('https://cdhnsportal.azurewebsites.net/automation/renewal/DwDpmP7ClwXz3B6b4uQb')
+    r = requests.get('https://cdhnsportal-beta.azurewebsites.net/automation/renewal/DwDpmP7ClwXz3B6b4uQb')
     #r = requests.get('http://localhost:5005/automation/renewal/DwDpmP7ClwXz3B6b4uQb')
     
     if r.status_code == 200:
@@ -49,7 +49,7 @@ if __name__ == "__main__":
         print(data)
         logger.info(data)
 
-    r = requests.get('https://cdhnsportal.azurewebsites.net/automation/removal/DwDpmP7ClwXz3B6b4uQb')
+    r = requests.get('https://cdhnsportal-beta.azurewebsites.net/automation/removal/DwDpmP7ClwXz3B6b4uQb')
     #r = requests.get('http://localhost:5005/automation/removal/DwDpmP7ClwXz3B6b4uQb')
     
     if r.status_code == 200:
