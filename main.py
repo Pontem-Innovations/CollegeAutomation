@@ -28,7 +28,7 @@ if __name__ == "__main__":
         r.encoding='utf-8-sig'
         data = json.loads(r.text)
         print(data)
-       logger.info(data)
+        logger.info(data)
 
     r = requests.get('https://crdhaportal-beta.azurewebsites.net/automation/removal/DwDpmP7ClwXz3B6b4uQb')
     #r = requests.get('https://crdhaportal.azurewebsites.net/automation/removal/DwDpmP7ClwXz3B6b4uQb')
