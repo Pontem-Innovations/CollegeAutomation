@@ -57,5 +57,14 @@ if __name__ == "__main__":
         data = json.loads(r.text)
         print(data)
         logger.info(data)
+        
+    r = requests.get('https://cdhnsportal.azurewebsites.net/automation/professional-corporation/DwDpmP7ClwXz3B6b4uQb')
+    #r = requests.get('http://localhost:5005/automation/renewal/DwDpmP7ClwXz3B6b4uQb')
+    
+    if r.status_code == 200:
+        r.encoding='utf-8-sig'
+        data = json.loads(r.text)
+        print(data)
+        logger.info(data)
     
     print('hello')
